@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="services,clarusway,web,html,css,graphic,design">
+    <meta name="description"
+        content="Learning new skills can feel daunting. We understand and support our students every step of the way – at every skill level.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <title>Clarusway - Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* nav */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #35424A;
+            padding: 10px;
+            border-bottom: 3px solid #A24F88;
+        }
+
+        .nav-links {
+            align-self: center;
+        }
+
+        .nav-links-container {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-links-item {
+            margin-left: 3rem;
+        }
+
+        .nav-link {
+            color: #ffff;
+            font-weight: 600;
+            transition: all 0.5s;
+        }
+
+        .nav-link:hover {
+            color: #A24F88;
+        }
+
+        .services {
+            color: #A24F88;
+            transition: all 0.5s;
+        }
+
+        .services:hover {
+            color: #ffff;
+        }
+
+        .heading {
+            color: #ffff;
+        }
+
+        .heading-left {
+            color: #A24F88;
+        }
+
+        /* subscribe */
+
+        #subscribe {
+            display: flex;
+            justify-content: space-between;
+            background-color: #35424A;
+            padding: 1rem;
+            color: #ffff;
+        }
+
+        .subscribe-heading {
+            align-self: center;
+        }
+
+        .input {
+            align-self: center;
+        }
+
+        #input-box {
+            outline: none;
+            padding: 5px;
+        }
+
+        .btn {
+            background-color: orangered;
+            color: #ffff;
+            padding: 7px 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        .btn:hover {
+            background-color: green;
+        }
+
+        /* services */
+        #services {
+            padding: 12px;
+        }
+
+        .clearfix {
+            display: table;
+            content: "";
+            clear: both;
+        }
+
+        .services-left-body {
+            width: 60%;
+            float: left;
+        }
+
+        .services-left-body h4 {
+            margin-bottom: 8px;
+        }
+
+        .website {
+            background-color: #E6E6E6;
+            padding: 12px;
+            margin-bottom: 5px;
+        }
+
+        .website h5 {
+            margin-bottom: 8px;
+        }
+
+        .website p {
+            margin-bottom: 8px;
+        }
+
+        .services-form {
+            width: 30%;
+            float: right;
+            background-color: #35424A;
+            color: #ffff;
+            padding: 2rem 2rem 2rem 1rem;
+        }
+
+        .services-form h4 {
+            margin-bottom: 1rem;
+        }
+
+        .services-form input,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            outline: none;
+        }
+
+        .services-form input:focus,
+        textarea:focus {
+            background-color: rgb(190, 219, 146);
+        }
+
+        .services-form-box {
+            margin-bottom: 10px;
+        }
+
+        .services-form-btn {
+            max-width: 50px;
+            background-color: orangered;
+            color: #ffff;
+            padding: 7px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        .services-form-btn:hover {
+            background-color: green;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #35424A;
+            color: #ffff;
+            text-align: center;
+            padding: 9px;
+            font-size: .8rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .clarusway-logo {
+            max-width: 200px;
+            margin-top: 5px;
+        }
+
+        @media (max-width:700px) {
+            html {
+                font-size: 15px;
+            }
+
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links-container {
+                flex-direction: column;
+            }
+
+            .nav-links-item {
+                margin: 1rem;
+            }
+            .services-left-body {
+                width: 100%;
+            }
+
+            .services-form {
+                width: 100%;
+            }
+
+            footer {
+                background-color: #35424A;
+                color: #ffff;
+                text-align: center;
+                padding: 9px;
+                font-size: .8rem;
+                position: relative;
+                bottom: 0;
+            }
+        }
+
+        @media (max-width:555px) {
+            html {
+                font-size: 14px;
+            }
+
+            #subscribe {
+                flex-direction: column;
+            }
+
+            .subscribe-heading {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width:380px) {
+            html {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<nav>
+    <div class="navbar">
+        <div class="heading">
+            <h1><span class="heading-left">Clarusway</span> Web Design</h1>
+        </div>
+        <div class="nav-links">
+            <ul class="nav-links-container">
+                <li class="nav-links-item">
+                    <a href="./index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-links-item">
+                    <a href="./about.html" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-links-item">
+                    <a href="./services.html" class="nav-link services">SERVICES</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="subscribe">
+    <div class="subscribe-heading">
+        <h4>
+            Subscribe To Our Newsletter
+        </h4>
+    </div>
+    <div class="input">
+        <form action="#" method="GET">
+            <input id="input-box" type="mail" name="mail" placeholder="Enter Your Email" autocomplete="off">
+            <input class="btn" type="submit" value="Subscribe">
+        </form>
+    </div>
+</section>
+<section id="services" class="clearfix">
+    <div class="services-left-body">
+        <h4>Services</h4>
+        <div class="website">
+            <h5>Website Design</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut iusto voluptatum, blanditiis enim
+                expedita ea incidunt odio mollitia sint?
+            </p>
+            <p>Pricing : $1,000 - $3,000</p>
+        </div>
+        <div class="website">
+            <h5>Website Maintenance</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut iusto voluptatum, blanditiis enim
+                expedita ea incidunt odio mollitia sint?
+            </p>
+            <p>Pricing : $250 per month</p>
+        </div>
+        <div class="website">
+            <h5>Website Hosting</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut iusto voluptatum, blanditiis enim
+                expedita ea incidunt odio mollitia sint?
+            </p>
+            <p>Pricing : $25 per month</p>
+        </div>
+    </div>
+    <div class="services-form">
+        <h4>Get A Quote</h4>
+        <form action="#" method="GET">
+            <div class="services-form-box">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="services-form-box">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Email Address">
+            </div>
+            <div class="services-form-box">
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message" cols="30" rows="3" placeholder="Message"></textarea>
+            </div>
+            <div class="services-form-box">
+                <input type="submit" value="Send" class="services-form-btn">
+            </div>
+        </form>
+    </div>
+</section>
+<footer>
+    <p>Clarusway Web Design, Copyright &#169 2021</p>
+    <img class="clarusway-logo" src="./img/clarusway_logo.png" alt="Clarusway-Logo">
+</footer>
+
+<body>
+
+</body>
+
+</html>

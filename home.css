@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* nav */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #35424a;
+  padding: 12px;
+  border-bottom: 3px solid #a24f88;
+}
+.nav-links {
+  align-self: center;
+}
+.nav-links-container {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links-item {
+  margin-left: 3rem;
+}
+
+.nav-link {
+  color: #ffff;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  color: #a24f88;
+}
+
+.home {
+  color: #a24f88;
+  transition: all 0.5s;
+}
+
+.home:hover {
+  color: #ffff;
+}
+
+.heading {
+  color: #ffff;
+}
+
+.heading-left {
+  color: #a24f88;
+}
+
+/* bg-image-body */
+
+#bg-image-body {
+  height: 250px;
+  background-image: url(./img/showcase.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.content-body {
+  margin: auto;
+  text-align: center;
+  color: #ffff;
+}
+
+.content-body h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* subscribe */
+
+#subscribe {
+  display: flex;
+  justify-content: space-between;
+  background-color: #35424a;
+  padding: 10px;
+  color: #ffff;
+}
+
+.subscribe-heading {
+  align-self: center;
+}
+
+.input {
+  align-self: center;
+}
+
+#input-box {
+  outline: none;
+  padding: 5px;
+}
+
+.btn {
+  background-color: orangered;
+  color: #ffff;
+  padding: 7px 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+/* lessons */
+
+#lessons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lesson-body {
+  text-align: center;
+  padding: 1rem;
+}
+
+.lesson-image {
+  max-width: 80px;
+  margin-bottom: 9px;
+}
+
+h5 {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #35424a;
+  color: #ffff;
+  text-align: center;
+  padding: 9px;
+  font-size: 0.8rem;
+}
+
+.clarusway-logo {
+  max-width: 200px;
+  margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links-container {
+    flex-direction: column;
+  }
+
+  .nav-links-item {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #subscribe {
+    flex-direction: column;
+  }
+
+  .subscribe-heading {
+    margin-bottom: 10px;
+  }
+
+  #lessons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #bg-image-body {
+    height: 400px;
+  }
+  .navbar {
+    padding: 2rem;
+  }
+  #subscribe {
+    padding: 2rem;
+  }
+  #lessons {
+    padding: 4.2rem;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+  #bg-image-body {
+    height: 600px;
+  }
+  .navbar {
+    padding: 3rem;
+  }
+  #subscribe {
+    padding: 3.3rem;
+  }
+  #lessons {
+    padding: 5rem;
+  }
+  footer {
+    padding: 2.3rem;
+  }
+}

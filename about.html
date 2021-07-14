@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="about,clarusway,web,html,css,graphic,design">
+    <meta name="description"
+        content="Clarusway is an IT Bootcamp with Coding, Data Science, AWS, and DevOps courses. Our curated content will meet your needs from beginner to expert level.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <title>Clarusway - About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* nav */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #35424A;
+            padding: 10px;
+            border-bottom: 3px solid #A24F88;
+        }
+
+        .nav-links {
+            align-self: center;
+        }
+
+        .nav-links-container {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-links-item {
+            margin-left: 3rem;
+        }
+
+        .nav-link {
+            color: #ffff;
+            font-weight: 600;
+            transition: all 0.5s;
+        }
+
+        .nav-link:hover {
+            color: #A24F88;
+        }
+
+        .about {
+            color: #A24F88;
+            transition: all 0.5s;
+        }
+
+        .about:hover {
+            color: #ffff;
+        }
+
+        .heading {
+            color: #ffff;
+        }
+
+        .heading-left {
+            color: #A24F88;
+        }
+
+        /* subscribe */
+
+        #subscribe {
+            display: flex;
+            justify-content: space-between;
+            background-color: #35424A;
+            padding: 1rem;
+            color: #ffff;
+        }
+
+        .subscribe-heading {
+            align-self: center;
+        }
+
+        .input {
+            align-self: center;
+        }
+
+        #input-box {
+            outline: none;
+            padding: 5px;
+        }
+
+        .btn {
+            background-color: orangered;
+            color: #ffff;
+            padding: 7px 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        .btn:hover {
+            background-color: green;
+        }
+
+        /* about */
+        #about {
+            padding: 1rem;
+        }
+
+        .about-us {
+            float: left;
+            width: 60%;
+        }
+
+        .whatwedo {
+            float: right;
+            width: 35%;
+            background-color: #35424A;
+            color: #ffff;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 55px;
+        }
+
+        .clearfix {
+            display: table;
+            content: "";
+            clear: both;
+        }
+
+        h5 {
+            margin-bottom: 1rem;
+        }
+
+        .first-par {
+            margin-bottom: 1rem;
+        }
+
+        .second-par {
+            background-color: #35424A;
+            color: #ffff;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #35424A;
+            color: #ffff;
+            text-align: center;
+            padding: 9px;
+            font-size: .8rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .clarusway-logo {
+            max-width: 200px;
+            margin-top: 5px;
+        }
+
+        @media (max-width:700px) {
+            html {
+                font-size: 15px;
+            }
+
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links-container {
+                flex-direction: column;
+            }
+
+            .nav-links-item {
+                margin: 1rem;
+            }
+
+            .about-us {
+                width: 100%;
+            }
+
+            .whatwedo {
+                width: 100%;
+                margin-top: 25px;
+            }
+
+            footer {
+                background-color: #35424A;
+                color: #ffff;
+                text-align: center;
+                padding: 9px;
+                font-size: .8rem;
+                position: relative;
+                bottom: 0;
+
+            }
+        }
+
+        @media (max-width:555px) {
+            html {
+                font-size: 14px;
+            }
+
+            #subscribe {
+                flex-direction: column;
+            }
+
+            .subscribe-heading {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width:380px) {
+            html {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<nav>
+    <div class="navbar">
+        <div class="heading">
+            <h1><span class="heading-left">Clarusway</span> Web Design</h1>
+        </div>
+        <div class="nav-links">
+            <ul class="nav-links-container">
+                <li class="nav-links-item">
+                    <a href="./index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-links-item">
+                    <a href="./about.html" class="nav-link about">ABOUT</a>
+                </li>
+                <li class="nav-links-item">
+                    <a href="./services.html" class="nav-link">SERVICES</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="subscribe">
+    <div class="subscribe-heading">
+        <h4>
+            Subscribe To Our Newsletter
+        </h4>
+    </div>
+    <div class="input">
+        <form action="#" method="GET">
+            <input id="input-box" type="mail" name="mail" placeholder="Enter Your Email">
+            <input class="btn" type="submit" value="Subscribe">
+        </form>
+    </div>
+</section>
+<section id="about" class="clearfix">
+    <div class="about-us">
+        <h5>About Us</h5>
+        <p class="first-par">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, possimus. Corrupti, at nam. Fugiat non
+            at enim nesciunt sit neque ipsam odio unde illo beatae dolore, eum perferendis inventore.
+        </p>
+        <p class="second-par">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, numquam. Magni ducimus ipsum doloremque
+            quos maxime a commodi reiciendis fuga, id enim dolore dicta nemo? Enim unde temporibus nisi sequi sunt quos
+            ducimus aspernatur error ipsam soluta ea, delectus laboriosam explicabo exercitationem reiciendis,
+            perspiciatis quae officia itaque totam esse! Quidem.
+        </p>
+    </div>
+    <div class="whatwedo">
+        <h5>What We Do</h5>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur facilis eius, quis odio perspiciatis
+            quam, perferendis consequuntur alias sequi laboriosam totam tempore, ipsa mollitia nisi.</p>
+    </div>
+</section>
+<footer>
+    <p>Clarusway Web Design, Copyright &#169 2021</p>
+    <img class="clarusway-logo" src="./img/clarusway_logo.png" alt="Clarusway-Logo">
+</footer>
+
+<body>
+
+</body>
+
+</html>
