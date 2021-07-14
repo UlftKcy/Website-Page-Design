@@ -21,9 +21,11 @@ a {
   padding: 12px;
   border-bottom: 3px solid #a24f88;
 }
+
 .nav-links {
   align-self: center;
 }
+
 .nav-links-container {
   list-style-type: none;
   display: flex;
@@ -146,13 +148,21 @@ footer {
   text-align: center;
   padding: 9px;
   font-size: 0.8rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .clarusway-logo {
   max-width: 200px;
   margin-top: 5px;
 }
-
+@media (max-width: 800px) {
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+}
 @media (max-width: 700px) {
   html {
     font-size: 15px;
@@ -189,37 +199,5 @@ footer {
 @media (max-width: 380px) {
   html {
     font-size: 12px;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  #bg-image-body {
-    height: 400px;
-  }
-  .navbar {
-    padding: 2rem;
-  }
-  #subscribe {
-    padding: 2rem;
-  }
-  #lessons {
-    padding: 4.2rem;
-  }
-}
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
-  #bg-image-body {
-    height: 600px;
-  }
-  .navbar {
-    padding: 3rem;
-  }
-  #subscribe {
-    padding: 3.3rem;
-  }
-  #lessons {
-    padding: 5rem;
-  }
-  footer {
-    padding: 2.3rem;
   }
 }
